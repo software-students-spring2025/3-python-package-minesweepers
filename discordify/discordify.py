@@ -1,5 +1,6 @@
 import re
 
+#dummify(text: str) -> str – Reverses the vowels in a string.
 def dummify(s):
     vowels = "aeiouAEIOU"
     vowel_list = [char for char in s if char in vowels]
@@ -10,7 +11,8 @@ def dummify(s):
         else:
             result.append(char)
     return "".join(result)
-
+  
+#stutterify(text: str) -> str – Adds a stuttering effect to the text.
 def stutterify(s):
     pronouns = {"you","wait","what","so","um","uh","i"}
     conjunctions = {'but','and'}
@@ -36,3 +38,45 @@ def stutterify(s):
             result.append(word)
 
     return " ".join(result)
+
+
+#uwuify(text: str) -> str – L to w, sparkle ASCII at the start and end
+def uwuify(s):
+    s = s.lower()
+
+    uwu= {
+        'l':'w','r':'w', '.':'⋆ ˚｡⋆୨୧˚\n⋆˙⟡'
+    }
+
+    result = ""
+    result += '✧˖°. '
+
+    for char in s:
+        if char in uwu:
+            result += uwu[char] 
+        else:
+            result += char
+    result += ' ₊˚⊹♡'
+
+    return result
+
+#leetify(text: str) -> str – Converts text into 1337 speak.
+def leetify(s):
+    s = s.upper()
+
+    leet= {
+        'O': '0', 'I': '1', 'Z': '2', 'E': '3',
+        'A': '4', 'S': '5', 'G': '6', 'T': '7',
+        'B': '8', 'P': '9'
+    }
+
+    result = ""
+    for char in s:
+        if char in leet:
+            result += leet[char] 
+        else:
+            result += char
+
+    return result
+
+
