@@ -8,3 +8,24 @@ def dummify(s):
         else:
             result.append(char)
     return "".join(result)
+
+
+#uwuify(text: str) -> str – L to w, sparkle ASCII at the start and end
+def uwuify(s):
+    s = s.lower()
+
+    uwu= {
+        'l':'w','r':'w', '.':'⋆ ˚｡⋆୨୧˚\n⋆˙⟡'
+    }
+
+    result = ""
+    result += '✧˖°. '
+
+    for char in s:
+        if char in uwu:
+            result += uwu[char] 
+        else:
+            result += char
+    result += ' ₊˚⊹♡'
+
+    return result
