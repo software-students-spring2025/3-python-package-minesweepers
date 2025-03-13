@@ -10,6 +10,26 @@ def dummify(s):
     return "".join(result)
 
 
+#uwuify(text: str) -> str – L to w, sparkle ASCII at the start and end
+def uwuify(s):
+    s = s.lower()
+
+    uwu= {
+        'l':'w','r':'w', '.':'⋆ ˚｡⋆୨୧˚\n⋆˙⟡'
+    }
+
+    result = ""
+    result += '✧˖°. '
+
+    for char in s:
+        if char in uwu:
+            result += uwu[char] 
+        else:
+            result += char
+    result += ' ₊˚⊹♡'
+
+    return result
+
 #leetify(text: str) -> str – Converts text into 1337 speak.
 def leetify(s):
     s = s.upper()
@@ -29,4 +49,4 @@ def leetify(s):
 
     return result
 
-        
+
