@@ -21,7 +21,7 @@ def stutterify(s):
         prefix = word[:1]
         return f"{prefix}-{word}" if word else word
     
-    words = re.findall(r"\b\w+\b|[^\w\s]", text)
+    words = re.findall(r"\b\w+\b|[^\w\s]", s)
     if words:
         words[0] = stutter(words[0])
     for i in range(1, len(words)):
