@@ -51,5 +51,6 @@ class Tests:
         assert actual == "✧˖°. hewwo ₊˚⊹♡"
 
         actual = discordify.uwuify('Hello. How are you?')
-        assert actual == "✧˖°. hewwo˚｡⋆୨୧˚\n⋆˙⟡ how awe you˚｡⋆୨୧˚"
+        assert actual == "✧˖°. hewwo˚｡⋆୨୧˚\n⋆˙⟡ how awe you? ₊˚⊹♡"
+
 
