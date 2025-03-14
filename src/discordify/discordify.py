@@ -42,10 +42,10 @@ def stutterify(s):
 
 #uwuify(text: str) -> str – L to w, sparkle ASCII at the start and end
 def uwuify(s):
-    s = s.lower()
+    s = s.lower().strip()
 
     uwu= {
-        'l':'w','r':'w', '.':'⋆ ˚｡⋆୨୧˚\n⋆˙⟡'
+        'l':'w','r':'w', '.':'˚｡⋆୨୧˚\n⋆˙⟡'
     }
 
     result = ""
@@ -56,9 +56,12 @@ def uwuify(s):
             result += uwu[char] 
         else:
             result += char
-    result += ' ₊˚⊹♡'
 
-    return result
+    if (s[len(s)-1] == '.'):        
+        return result[:-4]
+    else:
+        result += ' ₊˚⊹♡'
+        return result
 
 #leetify(text: str) -> str – Converts text into 1337 speak.
 def leetify(s):
@@ -79,4 +82,3 @@ def leetify(s):
 
     return result
 
-print(uwuify("hello"))
