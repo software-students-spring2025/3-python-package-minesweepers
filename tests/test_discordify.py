@@ -26,3 +26,29 @@ class Tests:
 
         actual = discordify.stutterify('Hello, how are you? I am fine, but tired.')
         assert actual == "H-Hello, how are y-you? I-I am fine, but... tired."
+
+    def test_leetify_get(self):
+        actual = discordify.leetify('hello')
+        assert len(actual) > 0
+    def test_leetify_string(self):
+        actual = discordify.leetify('hello')
+        assert isinstance(actual, str)
+    def test_leetify_equality(self):
+        actual = discordify.leetify('hello')
+        assert actual == "H3LL0"
+
+        actual = discordify.leetify('Hi, how are you?')
+        assert actual == "H1, H0W 4R3 Y0U?"
+
+    def test_uwuify_get(self):
+        actual = discordify.uwuify('hello')
+        assert len(actual) > 0
+    def test_uwuify_string(self):
+        actual = discordify.uwuify('hello')
+        assert isinstance(actual, str)
+    def test_uwuify_equality(self):
+        actual = discordify.uwuify('hello')
+        assert actual == "✧˖°. hewwo ₊˚⊹♡"
+
+        actual = discordify.uwuify('Hello. How are you?')
+        assert actual == "✧˖°. hewwo˚｡⋆୨୧˚\n⋆˙⟡ how awe you? ₊˚⊹♡"
