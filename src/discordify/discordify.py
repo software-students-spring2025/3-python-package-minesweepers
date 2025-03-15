@@ -1,4 +1,14 @@
-
+#dummify(text: str) -> str – Reverses the vowels in a string.
+def dummify(s):
+    vowels = "aeiouAEIOU"
+    vowel_list = [char for char in s if char in vowels]
+    result = []
+    for char in s:
+        if char in vowels:
+            result.append(vowel_list.pop())
+        else:
+            result.append(char)
+    return "".join(result)
 
 #leetify(text: str) -> str – Converts text into 1337 speak.
 def leetify(s):
