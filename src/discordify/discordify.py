@@ -1,4 +1,7 @@
+import re
+import sys
 
+sys.stdout.reconfigure(encoding='utf-8')
 
 #dummify(text: str) -> str – Reverses the vowels in a string.
 def dummify(s):
