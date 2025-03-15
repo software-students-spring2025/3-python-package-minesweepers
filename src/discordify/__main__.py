@@ -1,4 +1,4 @@
-import discordify
+import discordify.discordify as discordify
 
 def main():
     print('Enter one of the following functions: stutterify, uwuify, leetify, dummify')
