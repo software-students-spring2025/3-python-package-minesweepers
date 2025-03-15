@@ -60,3 +60,26 @@ def leetify(s):
             result += char
 
     return result
+
+#uwuify(text: str) -> str – L to w, sparkle ASCII at the start and end
+def uwuify(s):
+    s = s.lower().strip()
+
+    uwu= {
+        'l':'w','r':'w', '.':'˚｡⋆୨୧˚\n⋆˙⟡'
+    }
+
+    result = ""
+    result += '✧˖°. '
+
+    for char in s:
+        if char in uwu:
+            result += uwu[char] 
+        else:
+            result += char
+
+    if (s[len(s)-1] == '.'):        
+        return result[:-4]
+    else:
+        result += ' ₊˚⊹♡'
+        return result
