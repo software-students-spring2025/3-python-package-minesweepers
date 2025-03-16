@@ -1,5 +1,7 @@
 import pytest
 from src.discordify import discordify
+import re
+
 class Tests:
     def test_dummify_get(self):
         actual = discordify.dummify('hello')
@@ -52,3 +54,24 @@ class Tests:
 
         actual = discordify.uwuify('Hello. How are you?')
         assert actual == "✧˖°. hewwo˚｡⋆୨୧˚\n⋆˙⟡ how awe you? ₊˚⊹♡"
+        
+    def test_sarcasmify_get(self):
+        actual = discordify.sarcasmify('hello')
+        assert len(actual) > 0
+    def test_sarcasmify_string(self):
+        actual = discordify.sarcasmify('hello')
+        assert isinstance(actual, str)
+    def test_sarcasmify_alternating_case(self):
+        actual = discordify.sarcasmify('hello')
+        actual = re.sub(r' 🙄$', '', actual)
+        
+        is_upper = None
+        for i, char in enumerate(actual):
+            if not char.isalpha():
+                continue
+                
+            if is_upper is None:
+                is_upper = char.isupper()
+            else:
+                assert char.isupper() != is_upper
+                is_upper = char.isupper()

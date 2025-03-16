@@ -74,6 +74,19 @@ print(dummy_text)
 # Output: "Hu, how era yoi?"
 ```
 
+### 5. Sarcasmify
+Transforms text with alternating uppercase and lowercase letters to express sarcasm.
+
+```python
+from discordify import discordify
+
+# Add sarcasm style
+text = "Yeah, sure, whatever you say"
+sarcasm_text = discordify.sarcasmify(text)
+print(sarcasm_text)
+# Output might be: "YeAh, SuRe, WhAtEvEr YoU sAy 🙄"
+```
+
 ## Command Line Usage
 
 Discordify can also be used directly from the command line:
@@ -109,6 +122,8 @@ def demonstrate_discordify():
     print(discordify.leetify(sample_text))
     print("\n4. Dummify:")
     print(discordify.dummify(sample_text))
+    print("\n5. Sarcasmify:")
+    print(discordify.sarcasmify(sample_text))
 
 if __name__ == "__main__":
     demonstrate_discordify()
