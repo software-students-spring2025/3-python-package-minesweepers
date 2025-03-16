@@ -97,8 +97,6 @@ def sarcasmify(s):
         else:
             result.append(char)
     
-    # Add sarcasm indicator
-    if random.random() < 0.4:  # 40% chance
-        result.append(" 🙄")
+    result.append(" 🙄")
     
     return "".join(result)

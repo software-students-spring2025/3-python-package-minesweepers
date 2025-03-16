@@ -75,3 +75,11 @@ class Tests:
             else:
                 assert char.isupper() != is_upper
                 is_upper = char.isupper()
+    
+    def test_sarcasmify_emoji(self):
+        # Test that the emoji is always added
+        actual = discordify.sarcasmify('hello')
+        assert actual.endswith(' 🙄')
+        
+        actual = discordify.sarcasmify('This is a test!')
+        assert actual.endswith(' 🙄')
