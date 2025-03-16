@@ -6,8 +6,8 @@ A Python package that transforms your text into various Discord-inspired chat st
 
 ## Team Members
 
-- [Harini](https://github.com/peanutoil)
-- [Franyel](https://github.com/Franyel1)
+- [Harini Buddaluru](https://github.com/peanutoil)
+- [Franyel Diaz Rodriguez](https://github.com/Franyel1)
 - [Suhan]
 - [Jackson Chen](https://github.com/jaxxjj)
 ## Installation
@@ -20,7 +20,7 @@ pip install discordify
 
 ## Features
 
-Discordify offers four different text transformation functions:
+Discordify offers five different text transformation functions:
 
 ### 1. Stutterify
 Adds a stuttering effect to your text, making it look like you're nervous or excited!
