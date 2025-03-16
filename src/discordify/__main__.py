@@ -1,22 +1,24 @@
-import discordify
+import discordify.discordify as discordify
 
 def main():
-    print('Enter one of the following functions: stutterify, uwuify, leetify, dumbify')
+    print('Enter one of the following functions: stutterify, uwuify, leetify, dummify, sarcasmify')
     func = input('>').strip()
-    if func not in ['leetify','stutterify','uwuify','dumbify']:
+    if func not in ['leetify','stutterify','uwuify','dummify', 'sarcasmify']:
         print('Invalid input.')
         return
     print('Enter the text you wish to transform:')
     text = input('>').strip()
     print('Here is your transformed text:')
-    if func=='dumbify':
-        print(discordify.dumbify(text))
+    if func=='dummify':
+        print(discordify.dummify(text))
     if func=='stutterify':
         print(discordify.stutterify(text))
     if func=='leetify':
         print(discordify.leetify(text))
     if func=='uwuify':
         print(discordify.uwuify(text))
+    if func=='sarcasmify':
+        print(discordify.sarcasmify(text))
     return 
 
 if __name__=="__main__":

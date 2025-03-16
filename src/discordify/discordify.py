@@ -1,5 +1,6 @@
 import re
 import sys
+import random
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -83,3 +84,19 @@ def uwuify(s):
     else:
         result += ' ₊˚⊹♡'
         return result
+
+#sarcasmify(text: str) -> str – Alternates between uppercase and lowercase letters
+def sarcasmify(s):
+    result = []
+    should_be_upper = bool(random.getrandbits(1))  # Random start
+    
+    for char in s:
+        if char.isalpha():
+            result.append(char.upper() if should_be_upper else char.lower())
+            should_be_upper = not should_be_upper
+        else:
+            result.append(char)
+    
+    result.append(" 🙄")
+    
+    return "".join(result)
