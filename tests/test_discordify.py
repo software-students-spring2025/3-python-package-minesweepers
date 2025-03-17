@@ -83,3 +83,26 @@ class Tests:
         
         actual = discordify.sarcasmify('This is a test!')
         assert actual.endswith(' 🙄')
+
+    def test_piratify_get(self):
+        actual = discordify.piratify('hello')
+        assert len(actual) > 0
+
+    def test_piratify_string(self):
+        actual = discordify.piratify('hello')
+        assert isinstance(actual, str)
+
+    def test_piratify_basic_replacements(self):
+        actual = discordify.piratify('hello my friend')
+        assert 'ahoy' in actual
+        assert 'me' in actual
+        assert 'matey' in actual
+
+    def test_piratify_punctuation(self):
+        actual = discordify.piratify('Hello, my friend!')
+        assert actual.startswith('ahoy,')
+        assert actual.endswith('!')
+
+    def test_piratify_endings(self):
+        actual = discordify.piratify('hello')
+        assert any(ending in actual for ending in [' matey! ⚓', ' ye scurvy dog! 🏴‍☠️', ' arrr! ⚓', ' yarr harr! 🏴‍☠️', ' shiver me timbers! ⚓'])
