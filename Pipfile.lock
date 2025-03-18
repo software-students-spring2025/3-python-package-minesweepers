@@ -23,7 +23,7 @@
             "markers": "python_version >= '3.8'",
             "version": "==1.2.2.post1"
         },
-        "discordify": {
+        "discordifyText": {
             "editable": true,
             "file": "."
         },

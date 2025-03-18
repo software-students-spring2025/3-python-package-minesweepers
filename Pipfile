@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 pytest = "*"
 build = "*"
-discordify = {file = ".", editable = true}
+discordifyText = {file = ".", editable = true}
 
 [dev-packages]
 
