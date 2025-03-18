@@ -8,7 +8,7 @@ A Python package that transforms your text into various Discord-inspired chat st
 
 - [Harini Buddaluru](https://github.com/peanutoil)
 - [Franyel Diaz Rodriguez](https://github.com/Franyel1)
-- [Suhan] (https://github.com/Suhansrh)
+- [Suhan](https://github.com/Suhansrh)
 - [Jackson Chen](https://github.com/jaxxjj)
 ## Installation
 
