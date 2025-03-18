@@ -1,4 +1,4 @@
-# Discordify
+# discordifyText
 
 [![CI / CD](https://github.com/software-students-spring2025/3-python-package-minesweepers/actions/workflows/build.yaml/badge.svg)](https://github.com/software-students-spring2025/3-python-package-minesweepers/actions/workflows/build.yaml)
 
@@ -12,25 +12,25 @@ A Python package that transforms your text into various Discord-inspired chat st
 - [Jackson Chen](https://github.com/jaxxjj)
 ## Installation
 
-You can install Discordify directly from [PyPI]():
+You can install discordifyText directly from [PyPI]():
 
 ```bash
-pip install discordify
+pip install discordifyText
 ```
 
 ## Features
 
-Discordify offers six different text transformation functions:
+discordifyText offers six different text transformation functions:
 
 ### 1. Stutterify
 Adds a stuttering effect to your text, making it look like you're nervous or excited!
 
 ```python
-from discordify import discordify
+from discordifyText import discordifyText
 
 # Add stuttering effect
 text = "Hello, how are you? I am fine, but tired."
-stuttered = discordify.stutterify(text)
+stuttered = discordifyText.stutterify(text)
 print(stuttered)
 # Output: "H-Hello, how are y-you? I-I am fine, but... tired."
 ```
@@ -39,11 +39,11 @@ print(stuttered)
 Transforms your text into the cute "UwU" speak popular in some Discord communities.
 
 ```python
-from discordify import discordify
+from discordifyText import discordifyText
 
 # Make text cute and add sparkles
 text = "Hello. How are you?"
-uwu_text = discordify.uwuify(text)
+uwu_text = discordifyText.uwuify(text)
 print(uwu_text)
 # Output: "✧˖°. hewwo˚｡⋆୨୧˚⋆˙⟡ how awe you? ₊˚⊹♡"
 ```
@@ -52,11 +52,11 @@ print(uwu_text)
 Converts your text into "1337" (leet) speak by replacing letters with numbers.
 
 ```python
-from discordify import discordify
+from discordifyText import discordifyText
 
 # Convert to 1337 speak
 text = "Hi, how are you?"
-leet_text = discordify.leetify(text)
+leet_text = discordifyText.leetify(text)
 print(leet_text)
 # Output: "H1, H0W 4R3 Y0U?"
 ```
@@ -65,11 +65,11 @@ print(leet_text)
 Reverses all vowels in your text for a silly transformation.
 
 ```python
-from discordify import discordify
+from discordifyText import discordifyText
 
 # Reverse vowels
 text = "Hi, how are you?"
-dummy_text = discordify.dummify(text)
+dummy_text = discordifyText.dummify(text)
 print(dummy_text)
 # Output: "Hu, how era yoi?"
 ```
@@ -78,19 +78,19 @@ print(dummy_text)
 Transforms text with alternating uppercase and lowercase letters to express sarcasm.
 
 ```python
-from discordify import discordify
+from discordifyText import discordifyText
 
 # Add sarcasm style
 text = "Yeah, sure, whatever you say"
-sarcasm_text = discordify.sarcasmify(text)
+sarcasm_text = discordifyText.sarcasmify(text)
 print(sarcasm_text)
 # Output might be: "YeAh, SuRe, WhAtEvEr YoU sAy 🙄"
 ```
+
 ### 6. Piratify
 Transforms your text into pirate speak, adding nautical flair and emojis!
-
 ```python
-from discordify import discordify
+from discordifyText import discordifyText
 
 # Convert to pirate speak
 text = "Hello my friend"
@@ -100,14 +100,14 @@ print(pirate_text)
 ```
 ## Command Line Usage
 
-Discordify can also be used directly from the command line:
+discordifyText can also be used directly from the command line:
 
 ```bash
 # Install the package
-pip install discordify
+pip install discordifyText
 
 # Run the CLI
-discordify
+discordifyText
 ```
 
 Then follow the prompts to select a function and enter your text.
@@ -118,35 +118,35 @@ Here's a complete example program that demonstrates all functions:
 
 ```python
 # example.py
-from discordify import discordify
+from discordifyText import discordifyText
 
-def demonstrate_discordify():
+def demonstrate_discordifyText():
     sample_text = "Hello, world! Let's try all these transformations."
     
     print("Original text:")
     print(sample_text)
     print("\n1. Stutterify:")
-    print(discordify.stutterify(sample_text))
+    print(discordifyText.stutterify(sample_text))
     print("\n2. UwUify:")
-    print(discordify.uwuify(sample_text))
+    print(discordifyText.uwuify(sample_text))
     print("\n3. Leetify:")
-    print(discordify.leetify(sample_text))
+    print(discordifyText.leetify(sample_text))
     print("\n4. Dummify:")
-    print(discordify.dummify(sample_text))
+    print(discordifyText.dummify(sample_text))
     print("\n5. Sarcasmify:")
-    print(discordify.sarcasmify(sample_text))
+    print(discordifyText.sarcasmify(sample_text))
     print("\n6. Piratify:")
-    print(discordify.piratify(sample_text))
+    print(discordifyText.piratify(sample_text))
 
 if __name__ == "__main__":
-    demonstrate_discordify()
+    demonstrate_discordifyText()
 ```
 
 Save this as `example.py` and run it with `python example.py`.
 
 ## Development Setup
 
-If you want to contribute to Discordify, follow these steps:
+If you want to contribute to discordifyText, follow these steps:
 
 ### Prerequisites
 

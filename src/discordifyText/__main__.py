@@ -1,4 +1,4 @@
-import discordify.discordify as discordify
+import discordifyText.discordifyText as discordifyText
 
 def main():
     print('Enter one of the following functions: stutterify, uwuify, leetify, dummify, sarcasmify, piratify')
@@ -10,17 +10,17 @@ def main():
     text = input('>').strip()
     print('Here is your transformed text:')
     if func=='dummify':
-        print(discordify.dummify(text))
+        print(discordifyText.dummify(text))
     if func=='stutterify':
-        print(discordify.stutterify(text))
+        print(discordifyText.stutterify(text))
     if func=='leetify':
-        print(discordify.leetify(text))
+        print(discordifyText.leetify(text))
     if func=='uwuify':
-        print(discordify.uwuify(text))
+        print(discordifyText.uwuify(text))
     if func=='sarcasmify':
-        print(discordify.sarcasmify(text))
+        print(discordifyText.sarcasmify(text))
     if func=='piratify':
-        print(discordify.piratify(text))
+        print(discordifyText.piratify(text))
     return 
 
 if __name__=="__main__":
