@@ -8,9 +8,9 @@ description = "A package that transforms your sentences into various 'discord li
 version = "0.1.3"
 authors = [
   { name="Harini Buddaluru", email="hb2657@nyu.edu" },
-  { name="Franyel Diaz Rodriguez", email="fd2190@nyu.edu"}
-  { name="Suhan Suresh", email="suuhansuresh@gmail.com"}
-  { name="Jackson Chen", email="jc13246@nyu.edu"}
+  { name="Franyel Diaz Rodriguez", email="fd2190@nyu.edu"},
+  { name="Suhan Suresh", email="suuhansuresh@gmail.com"},
+  { name="Jackson Chen", email="ymchen0125@gmail.com"}
 ]
 license = { file = "LICENSE" }
 readme = "README.md"
