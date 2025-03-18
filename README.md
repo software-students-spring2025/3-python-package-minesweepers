@@ -137,6 +137,8 @@ def demonstrate_discordify():
     print(discordify.dummify(sample_text))
     print("\n5. Sarcasmify:")
     print(discordify.sarcasmify(sample_text))
+    print("\n6. Piratify:")
+    print(discordify.piratify(sample_text))
 
 if __name__ == "__main__":
     demonstrate_discordify()
