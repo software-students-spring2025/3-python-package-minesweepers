@@ -87,6 +87,15 @@ print(sarcasm_text)
 # Output might be: "YeAh, SuRe, WhAtEvEr YoU sAy 🙄"
 ```
 
+```python
+from discordify import discordify
+
+# Add pirate speak
+text = "Hello how are you"
+pirate_text = discordify.piratify(text)
+print(pirate_text)
+# Output might be: "ahoy how be ye yarr harr! 🏴‍☠️"
+```
 ## Command Line Usage
 
 Discordify can also be used directly from the command line:
