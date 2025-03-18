@@ -8,7 +8,7 @@ A Python package that transforms your text into various Discord-inspired chat st
 
 - [Harini Buddaluru](https://github.com/peanutoil)
 - [Franyel Diaz Rodriguez](https://github.com/Franyel1)
-- [Suhan]
+- [Suhan](https://github.com/Suhansrh)
 - [Jackson Chen](https://github.com/jaxxjj)
 ## Installation
 
@@ -86,7 +86,6 @@ sarcasm_text = discordify.sarcasmify(text)
 print(sarcasm_text)
 # Output might be: "YeAh, SuRe, WhAtEvEr YoU sAy 🙄"
 ```
-
 ### 6. Piratify
 Transforms your text into pirate speak, adding nautical flair and emojis!
 
@@ -99,7 +98,6 @@ pirate_text = discordify.piratify(text)
 print(pirate_text)
 # Output: "ahoy me matey! ⚓"
 ```
-
 ## Command Line Usage
 
 Discordify can also be used directly from the command line:
