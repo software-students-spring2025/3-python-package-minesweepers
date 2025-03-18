@@ -100,3 +100,60 @@ def sarcasmify(s):
     result.append(" 🙄")
     
     return "".join(result)
+
+def piratify(s):
+    """Convert text into pirate speak, adding pirate slang and nautical flair.
+    
+    Args:
+        s (str): The input text to convert to pirate speak
+        
+    Returns:
+        str: The piratified text with nautical emojis
+        
+    Example:
+        >>> piratify("Hello my friend")
+        'ahoy me matey! ⚓'
+    """
+    pirate_dict = {
+        'hello': 'ahoy',
+        'hi': 'yarr',
+        'my': 'me',
+        'your': 'yer',
+        'you': 'ye',
+        'is': 'be',
+        'are': 'be',
+        'the': "th'",
+        'yes': 'aye',
+        'no': 'nay',
+        'stop': 'avast',
+        'friend': 'matey',
+        'friends': 'crew',
+        'everyone': 'all hands',
+        'food': 'grub',
+        'drink': 'grog',
+        'money': 'doubloons',
+        'treasure': 'booty'
+    }
+    
+    endings = [
+        " matey! ⚓",
+        " ye scurvy dog! 🏴‍☠️",
+        " arrr! ⚓",
+        " yarr harr! 🏴‍☠️",
+        " shiver me timbers! ⚓"
+    ]
+    
+    words = s.lower().split()
+    
+    for i, word in enumerate(words):
+        clean_word = word.strip('.,!?')
+        if clean_word in pirate_dict:
+            punct = word[len(clean_word):]
+            words[i] = pirate_dict[clean_word] + punct
+    
+    result = ' '.join(words)
+    
+    if not result.rstrip()[-1] in '.!?':
+        result += random.choice(endings)
+    
+    return result
