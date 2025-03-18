@@ -86,13 +86,17 @@ sarcasm_text = discordify.sarcasmify(text)
 print(sarcasm_text)
 # Output might be: "YeAh, SuRe, WhAtEvEr YoU sAy 🙄"
 ```
-### 5. Piratify
-Transforms text with [add info here]
+### 6. Piratify
+Transforms your text into pirate speak, adding nautical flair and emojis!
 
 ```python
 from discordify import discordify
 
-[add example here]
+# Convert to pirate speak
+text = "Hello my friend"
+pirate_text = discordify.piratify(text)
+print(pirate_text)
+# Output: "ahoy me matey! ⚓"
 ```
 ## Command Line Usage
 
@@ -208,6 +212,3 @@ This will generate distribution files in the `dist/` directory.
    ```
 
 5. Create a Pull Request to the `main` branch
-
-
-
