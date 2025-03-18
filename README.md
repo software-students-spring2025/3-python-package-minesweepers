@@ -20,7 +20,7 @@ pip install discordify
 
 ## Features
 
-Discordify offers five different text transformation functions:
+Discordify offers six different text transformation functions:
 
 ### 1. Stutterify
 Adds a stuttering effect to your text, making it look like you're nervous or excited!
@@ -86,7 +86,14 @@ sarcasm_text = discordify.sarcasmify(text)
 print(sarcasm_text)
 # Output might be: "YeAh, SuRe, WhAtEvEr YoU sAy 🙄"
 ```
+### 5. Piratify
+Transforms text with [add info here]
 
+```python
+from discordify import discordify
+
+[add example here]
+```
 ## Command Line Usage
 
 Discordify can also be used directly from the command line:
@@ -124,6 +131,8 @@ def demonstrate_discordify():
     print(discordify.dummify(sample_text))
     print("\n5. Sarcasmify:")
     print(discordify.sarcasmify(sample_text))
+    print("\n6. Piratify:")
+    print(discordify.piratify(sample_text))
 
 if __name__ == "__main__":
     demonstrate_discordify()
