@@ -12,7 +12,7 @@ A Python package that transforms your text into various Discord-inspired chat st
 - [Jackson Chen](https://github.com/jaxxjj)
 ## Installation
 
-You can install discordifyText directly from [PyPI]():
+You can install discordifyText directly from [PyPI](https://pypi.org/project/discordifyText/0.1.3/):
 
 ```bash
 pip install discordifyText
@@ -94,7 +94,7 @@ from discordifyText import discordifyText
 
 # Convert to pirate speak
 text = "Hello my friend"
-pirate_text = discordify.piratify(text)
+pirate_text = discordifyText.piratify(text)
 print(pirate_text)
 # Output: "ahoy me matey! ⚓"
 ```
@@ -108,6 +108,14 @@ pip install discordifyText
 
 # Run the CLI
 discordifyText
+```
+Or
+```bash
+# Install the package
+pip install discordifyText
+
+# Run the CLI
+python -m discordifyText
 ```
 
 Then follow the prompts to select a function and enter your text.
