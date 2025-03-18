@@ -86,7 +86,8 @@ sarcasm_text = discordify.sarcasmify(text)
 print(sarcasm_text)
 # Output might be: "YeAh, SuRe, WhAtEvEr YoU sAy 🙄"
 ```
-
+### 5. Piratify
+Transforms text into a pirate speak.
 ```python
 from discordify import discordify
 
