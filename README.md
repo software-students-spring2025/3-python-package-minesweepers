@@ -12,7 +12,7 @@ A Python package that transforms your text into various Discord-inspired chat st
 - [Jackson Chen](https://github.com/jaxxjj)
 ## Installation
 
-You can install discordifyText directly from [PyPI](https://pypi.org/project/discordifyText/0.1.3/):
+You can install discordifyText directly from [PyPI](https://pypi.org/project/discordifyText/0.1.5/):
 
 ```bash
 pip install discordifyText
